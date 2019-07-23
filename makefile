@@ -11,8 +11,8 @@ all: $(readme)
 # $^: List of non-duplicate pre-requisites
 $(readme): guessinggame.sh
 	@echo "Project Title: Guessing Game" > $(readme)
-	@echo "Date-Time: " $(DATE_TIME) >> $(readme)
-	@echo "Lines of code: " $(shell wc -l $^ | egrep -o "[0-9]+") >> $(readme)
+	@echo "\nDate-Time: " $(DATE_TIME) >> $(readme)
+	@echo "\nLines of code: " $(shell wc -l $^ | egrep -o "[0-9]+") >> $(readme)
 
 # Clean
 clean:
